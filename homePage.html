@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            height: 100%;
+            background-color: gold;
+            overflow: scroll;
+        }
+
+        .emptyBlock form {
+            min-width: 100%;
+            position: relative;
+            top: 50px;
+            padding: 25px;
+        }
+
+
+        #upper {
+            background-image: url(Images/tulips-3099855_1920.jpg);
+            min-width: 100%;
+            min-height: 650px;
+            display: inline-block;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+
+        }
+
+        #middleUpper {
+            background-color: gold;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .log {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+            position: absolute;
+            z-index: 1;
+            margin-top: 155px;
+
+        }
+
+        #upper .log {
+            left: 35%;
+            top: 100px;
+        }
+
+        h2 {
+            left: 40%;
+            text-align: center;
+            color: white;
+            height: 60px;
+            padding-top: 10px;
+        }
+
+        .logoContainer {
+            position: relative;
+            background-color: black;
+            width: 300px;
+            left: 40%;
+            border-radius: 20px;
+        }
+
+
+        #profilePic {
+            position: relative;
+            top 10px;
+            max-width: 300px;
+            top: 15px;
+            padding-top: 50px;
+            float: left;
+
+        }
+
+        #profileInfo {
+            position: relative;
+            float: left;
+            max-width: 600px;
+            padding: 40px;
+
+        }
+
+        #iconContainer {
+            float: right;
+            width: 350px;
+            display: block;
+            margin: 0 auto;
+            top: 10px;
+            padding-top: 10px;
+        }
+
+        /*        parralex*/
+
+        #Books {
+            background-image: url(Images/books-1655783_1920.jpg);
+            min-width: 100%;
+            min-height: 400px;
+            display: inline-block;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        #Class {
+            background-image: url(Images/gallery-3114279_1920.jpg);
+            min-width: 100%;
+            min-height: 400px;
+            display: inline-block;
+            scroll-behavior: auto;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .emptyBlock {
+            max-width: 100%;
+        }
+
+        .emptyBlock p {
+            padding: 40px;
+            width: 400px;
+        }
+
+        #buttom li {
+            font-size: 8px;
+        }
+
+        .button {
+            height: 30px;
+            width: 80px;
+            background-color: royalblue;
+            border-radius: 5px;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .arial {
+            font-family: arial;
+        }
+
+        /*        ---------------------------------*/
+
+        @media only screen and (max-width: 500px) {
+
+            .navbar {
+                visibility: collapse;
+
+            }
+            img {
+                visibility: collapse;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Artist Mommy Life</a>
+                <img src="Images/tunuindieflower%20(3).png" height="45px" width="45px">
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="upper">
+        <div class="logo">
+            <span class="log">Artist Mommy Life</span>
+        </div>
+    </div>
+
+    <div id="middleUpper">
+        <div id="profilePic">
+            <img src="Images/26730889_10155324604832947_2044134660781061047_n.jpg" height="300" width="300">
+
+        </div>
+
+        <div id="profileInfo">
+            <h1 class="arial">About Thom Tunu</h1>
+            <p class="arial">
+                DUMMY TEXT Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+    <div id="Books">
+        <div class="logoContainer" style="top: 150px">
+            <h2>My Books</h2>
+        </div>
+    </div>
+
+    <div class="emptyBlock" style="height: 500px">
+        <p class="arial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+        </p>
+    </div>
+    </div>
+
+    <div id="Class">
+        <div class="logoContainer" style="top: 150px;">
+            <h2>Class Scedules</h2>
+        </div>
+    </div>
+
+    <div class="emptyBlock" style="height: 400px;">
+        <div class="logoContainer" style="top: 20px" ;>
+            <h2 style="left: 0;">Subscribe</h2>
+        </div>
+        <form>
+            First name:<br>
+            <input type="text" name="firstname" size="40"><br> Last name:<br>
+            <input type="text" name="lastname" size="40"><br> Email:
+            <br>
+            <input type="text" name="email" size="60"><br>
+            <br>
+            <input type="submit" class="button" value="Submit">
+
+        </form>
+
+    </div>
+
+    <footer>
+        <div id="iconContainer">
+            <ul class="social-icons">
+                <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+
+        <address>
+        <div id="contactInformation">
+            <ul>
+                <li>The Artist Mommy</li>
+                <li>artistmommylife.wordpress.com </li>
+                <li>instagram: artist_mommy_life</li>
+            </ul>
+        </div>
+
+    </address>
+    </footer>
+
+</body>
+
+<!--*********************************
+    *  Webstite developed by        *
+    *    Steven Liao                *
+    *    steveliao78@gmail.com      *
+    *********************************  -->
+
+</html>

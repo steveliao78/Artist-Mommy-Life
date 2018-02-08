@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        video {
+            position: absolute;
+            top: -5px;
+            margin: 0;
+            max-width: 105%;
+            min-width: 100%;
+            z-index: -3;
+        }
+
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        #title {
+            text-align: center;
+            background: black;
+            display: block;
+            position: absolute;
+            left: 35%;
+            padding: 10px;
+            top: 100px;
+            border-radius: 25px;
+            opacity: 0.8;
+        }
+
+        #title h1 {
+/*            text-align: center;*/
+            color: white;
+            font-family: Georgia, serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+            opacity: 0.8;
+        }
+
+        .sidenav a {
+            top: 20px;
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+
+        }
+
+
+        /*mobile visibility*, if less than 722px, the video will not show and the static image displays in it's place*/
+
+        @media only screen and (max-width: 1000px) {
+
+            video {
+                display: none;
+                float: right;
+            }
+            body {
+                background-color: saddlebrown;
+            }
+            .sidenav{
+                visibility: collapse;    
+            }
+
+        }
+
+        @media only screen and (min-width: 1000px) {
+
+            video {
+                visibility: visible;
+                transition: 0.3s;
+            }
+            body {
+                background-image: none;
+            }
+            
+        }
+        
+        
+
+    </style>
+
+</head>
+
+<!---------------------------------------------------->
+
+
+<body>
+
+
+    <video id="backgroundVideo" autoplay muted loop> 
+    <source src ="videos/Lamp%20-%2011186.mp4" type= "video/mp4"> 
+    </video>
+
+
+    <div class="sidenav">
+        <a href="homePage.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="store.html">Store</a>
+        <a href="classes.html">Classes</a>
+        <a href="contactPage.html">Contact</a>
+    </div>
+
+    <div id="title">
+        <img src="Images/tunuindieflower%20(3).png" alt="Smiley face" height="200px" width="200px">
+        
+        <h1>Welcome to Artist Mommy Life</h1>
+    </div>
+
+    <script>
+        var video;
+        video = document.getElementById("backgroundVideo");
+
+        function enableLoop() {
+            video.loop = true;
+            video.load();
+        }
+
+    </script>
+
+</body>
+
+</html>

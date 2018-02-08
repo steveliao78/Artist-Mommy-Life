@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            overflow: scroll;
+            background-repeat: no-repeat;
+            max-height: 700px;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /*    -------------------------------------*/
+
+        footer {
+            position: fixed;
+        }
+
+
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+        @media (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Artist Mommy Life</a>
+                <img src="Images/tunuindieflower%20(3).png" height="45px" width="45px">
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="wrap">
+
+        <!-- Three columns ----------------------------------------------------------->
+        <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:dimGrey;">
+                Box 1
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:dimGrey;">
+                Box 2
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background:dimGrey;">
+                Box 3
+            </div>
+        </div>
+
+        <!-- Full-width columns: (hidden by default) -->
+        <div id="b1" class="containerTab" style="display:none;background:royalBlue">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Box 1</h2>
+            <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
+
+        <div id="b2" class="containerTab" style="display:none;background:royalblue">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Box 2</h2>
+            <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
+
+        <div id="b3" class="containerTab" style="display:none;background:royalBlue">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Box 3</h2>
+            <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+    </script>
+
+    <!--<form action="/action_page.php">-->
+
+
+
+    <footer id="bottom">
+        <div id="contactInformation">
+            <ul>
+                <li>The Artist Mommy</li>
+                <li>artistmommylife.wordpress.com </li>
+                <li>instagram: artist_mommy_life</li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
